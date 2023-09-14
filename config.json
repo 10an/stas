@@ -1,0 +1,22 @@
+{
+    "speech_2_text": {
+        "api_key": "INPUT_API_KEY_HERE",
+        "language": "no"
+    },
+    
+    "gpt": {
+        "api_key": "INPUT_API_KEY_HERE",
+        "model": "gpt-3.5-turbo",
+        "system_prompt": "You are a voice assistant.",
+        "chat_max": 3,
+        "input_token_price": 0.0015,
+        "output_token_price": 0.002,
+        "currency": "USD"
+    },
+
+    "text_2_speech": {
+        "api_key": "INPUT_API_KEY_HERE",
+        "model": "eleven_monolingual_v1",
+        "voice": "Bella"
+    }
+}
