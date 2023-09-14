@@ -2,10 +2,10 @@ import os
 import speech_recognition
 
 # Get OpenAI API key from environment variable
-# OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+api_key = os.environ.get("OPENAI_API_KEY")
 
 # Function to convert client speech into text
-def speech_2_text():
+def speech_2_text(api_key):
 
     # Obtain audio from the microphone
     speech_recognizer = speech_recognition.Recognizer()
@@ -14,7 +14,7 @@ def speech_2_text():
         audio = speech_recognizer.listen(source)
 
     # Recognize speech using Whisper API
-    text = speech_recognizer.recognize_whisper_api(audio)
+    text = speech_recognizer.recognize_whisper_api(audio, api_key=api_key)
 
     try:
         pass

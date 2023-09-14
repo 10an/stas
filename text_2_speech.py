@@ -2,15 +2,12 @@ from elevenlabs import set_api_key, generate, play
 from elevenlabs.api import History
 
 
-ELEVENLABS_API_KEY = "<API-Key>"
-set_api_key(ELEVENLABS_API_KEY)
-
-
-def text2speech(assistant_text_response):
+def text2speech(api_key, text, voice, model):
+    set_api_key(api_key)
     audio = generate(
-        text=assistant_text_response,
-        voice="Bella",
-        model='eleven_monolingual_v1'
+        text=text,
+        voice=voice,
+        model=model
     )
     return audio
 
