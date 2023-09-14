@@ -2,7 +2,7 @@ from elevenlabs import set_api_key, generate, play
 from elevenlabs.api import History
 
 
-ELEVENLABS_API_KEY = "f8e993eb40a6394b12a8f270a3db7a60"
+ELEVENLABS_API_KEY = "<API-Key>"
 set_api_key(ELEVENLABS_API_KEY)
 
 
